@@ -2,7 +2,7 @@
     <div class="main">
         <div class="categories">
             <button class="category-item">Bathroom</button>
-            <button class="category-item" id="selected">Bed Room</button>
+            <button class="category-item selected">Bed Room</button>
             <button class="category-item">Kitchan</button>
             <button class="category-item">Living Area</button>
         </div>
@@ -47,8 +47,6 @@
 </template>
 
 <script>
-
-
     const projectsData = [
         {
             id: 1,
@@ -132,7 +130,6 @@
     height: 75px;
     border: 1px solid #CDA274;
     border-radius: 18px;
-    /* margin-bottom: 60px; */
     margin: 0 auto 60px auto;
 }
 
@@ -152,14 +149,14 @@
     background-color: #fff;
     gap: 10px;
 }
-#selected {
+.selected {
     background: #CDA274;
     color: #fff;
 }
 
 .project-list {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Две колонки равной ширины */
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 30px;
 }
 
